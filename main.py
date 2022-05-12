@@ -66,13 +66,6 @@ app = Client("my_account", api_id=api_id, api_hash=api_hash)
 
 
 
-@app.on_message(filters.command("putin",prefixes=".") & filters.me)
-def lol(app, msg):
-    app.send_message(msg.chat.id, random.choice(pukin))
-
-
-
-
 
 
 
